@@ -1,0 +1,144 @@
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Cabeçalho e Busca */
+header {
+  max-width: 600px;
+  width: 100%;
+  padding: 80px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#input-search {
+  width: 900px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+#button-search {
+  background-color: #e50914;
+  width: 100px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#button-search:hover {
+  background-color: #b81d24;
+  transform: scale(1.1);
+}
+#button-search:active {
+  transform: scale(0.97);
+}
+
+.hidden-message-status {
+  color: #aaa;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+/* Grid Films */
+.grid-films {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card film */
+.card-film {
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.card-film:hover {
+  transform: scale(1.05);
+}
+
+.card-film img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 15px;
+}
+.card-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-info span {
+  color: #46d369;
+  font-weight: bold;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+  }
+  .container-search {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  #input-search {
+    width: 100%;
+    text-align: center;
+  }
+  #button-search {
+    width: 100%;
+  }
+  .grid-films {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* Deixa os cards um pouco menores no celular para caberem mais por linha */
+    gap: 15px;
+    padding: 0 10px;
+  }
+}
