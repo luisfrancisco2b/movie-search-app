@@ -11,8 +11,8 @@ The main focus of this project was to apply advanced front-end development conce
 Here is how the application looks on both Desktop and Mobile devices:
 
 <p align="center">
-  <img src="img/desktop.png" alt="Desktop Preview" width="65%" />
-  <img src="img/mobile.jpg" alt="Mobile Preview" width="30%" style="vertical-align: top;" />
+  <img src="img/Desktop-Preview.png" alt="Desktop Preview" width="65%" />
+  <img src="img/Mobile-Preview.png" alt="Mobile Preview" width="30%" style="vertical-align: top;" />
 </p>
 
 ---
@@ -56,3 +56,7 @@ Open Open the `index.html` file in your browser, or run it using an extension li
 
 http://127.0.0.1:5500/index.html
 ```
+
+## 👨‍💻 Author
+
+Luis Francisco

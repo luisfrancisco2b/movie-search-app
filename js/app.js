@@ -53,7 +53,7 @@ function exibirFilmes(filmes) {
     // Validação da imagem: se não tiver pôster, usamos uma imagem padrão (placeholder)
     const imagemCapa = filme.poster_path
       ? `https://image.tmdb.org/t/p/w500${filme.poster_path}`
-      : "https://via.placeholder.com/500x750?text=Sem+Capa";
+      : "https://placehold.co/500x750?text=Sem+Capa";
 
     // Cria um elemento <div> na memória do computador
     const card = document.createElement("div");
